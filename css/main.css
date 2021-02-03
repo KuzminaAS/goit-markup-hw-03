@@ -21,23 +21,40 @@ html {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
 }
-.container-header-contant {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.navigation-site {
+  display: flex;
+  align-items: center;
 }
 .container-logo {
   margin-top: 24px;
   margin-bottom: 25px;
+  margin-right: 93px;
   width: 145px;
 }
 .site-logo {
@@ -58,10 +75,19 @@ a {
 .container-list-links {
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-right: auto;
   width: 294px;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 .site-nav .link {
   color: var(--title-text-color);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -84,12 +110,19 @@ a {
 .container-mailto {
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-right: 50px;
   width: 132px;
 }
 .container-callto {
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-right: 50px;
   width: 122px;
+}
+.site-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 .site-contacts .contacts {
   color: var(--primary-text-color);
@@ -112,6 +145,11 @@ a {
 .site-contacts .contacts-currant:hover,
 .site-contacts .contacts-currant:focus {
   color: var(--accent-color);
+}
+.footer-container {
+  width: 270px;
+  padding: 60px 0px;
+  align-items: center;
 }
 .adress {
   background: var(--background-color);
