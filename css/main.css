@@ -7,12 +7,13 @@
   --buttons-color: #f5f4fa;
   --feed-back-color: rgba(255, 255, 255, 0.6);
 }
-.container-header {
-  color: var(--white-color);
-  /* margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
-  height: 80px; */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 .styles-body {
   background: var(--white-color);
@@ -20,11 +21,24 @@
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+.container-header-contant {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+.container-logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  width: 145px;
 }
 .site-logo {
   color: var(--accent-color);
@@ -39,6 +53,12 @@ a {
 }
 .site-logo .logo-secondary {
   color: var(--white-color);
+}
+
+.container-list-links {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 294px;
 }
 .site-nav .link {
   color: var(--title-text-color);
@@ -61,6 +81,16 @@ a {
 .site-nav .link.currant {
   color: var(--accent-color);
 }
+.container-mailto {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 132px;
+}
+.container-callto {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 122px;
+}
 .site-contacts .contacts {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -70,6 +100,17 @@ a {
 }
 .site-contacts .contacts:hover,
 .site-contacts .contacts:focus {
+  color: var(--accent-color);
+}
+.site-contacts .contacts-currant {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-contacts .contacts-currant:hover,
+.site-contacts .contacts-currant:focus {
   color: var(--accent-color);
 }
 .adress {
