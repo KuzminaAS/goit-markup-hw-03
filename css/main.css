@@ -7,14 +7,7 @@
   --buttons-color: #f5f4fa;
   --feed-back-color: rgba(255, 255, 255, 0.6);
 }
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 .styles-body {
   background: var(--white-color);
   color: var(--primary-text-color);
@@ -26,7 +19,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 

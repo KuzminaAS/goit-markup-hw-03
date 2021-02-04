@@ -23,13 +23,12 @@
        } 
 */
 /* styles for index.html---> */
-
 .container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   outline: 2px solid tomato;
 }
 .hero {
@@ -112,6 +111,8 @@
   flex-basis: calc(100% / 3- 30px);
 }
 .section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 .team-list {
@@ -121,9 +122,13 @@
   margin-top: -30px;
 }
 .team-list-img {
+  width: 270px;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-cards {
   text-align: center;
@@ -175,29 +180,67 @@
   width: 1px !important;
   overflow: hidden;
 }
+
+.site-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-items {
+  margin-left: 8px;
+}
 .site-buttons .button {
   color: var(--title-text-color);
+  margin: 0 auto;
+  padding: 6px 22px;
   background-color: var(--buttons-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border: #ffffff;
+  border-radius: 4px;
 }
 .site-buttons .button:hover,
 .site-buttons .button:focus {
   background: var(--accent-color);
   color: var(--white-color);
 }
+.portfolio {
+  padding: 94px 0px;
+}
+.list-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-content-item {
+  max-width: 370px;
+  min-height: 404px;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.list-content-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.list-content-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.content-portfolio {
+  padding: 20px 24px;
+}
 
-.list-content .content {
+.list-content .project-name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.06em;
 }
-p {
+.list-content .type {
+  margin-top: 4px;
   color: var(--primary-text-color);
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.87px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }

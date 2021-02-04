@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -27,128 +31,129 @@
           </ul>
         </nav>
         <ul class="site-contacts">
-          <div class="container-mailto">
-            <li><a href="mailto:info@devstudio.com" class="contacts-currant">info@devstudio.com</a></li>
-          </div>
-          <div class="container-callto">
-            <li><a href="callto:+380961111111" class="contacts">+38 096 111 11 11</a></li>
-          </div>
+          <li class="container-mailto">
+            <a href="mailto:info@devstudio.com" class="contacts-currant">info@devstudio.com</a>
+          </li>
+          <li class="container-callto"><a href="callto:+380961111111" class="contacts">+38 096 111 11 11</a></li>
         </ul>
+      </div>
     </header>
     <!-- Контент страницы Портфолио -->
     <main>
-      <section>
-        <!-- Скрытый главный заголовок -->
-        <h1 class="visually-hidden">Портфолио</h1>
-        <ul class="site-buttons">
-          <li><button type="button" class="button">Все</button></li>
-          <li><button type="button" class="button">Веб-сайты</button></li>
-          <li><button type="button" class="button">Приложения</button></li>
-          <li><button type="button" class="button">Дизайн</button></li>
-          <li><button type="button" class="button">Маркетинг</button></li>
-        </ul>
+      <section class="portfolio">
+        <div class="container">
+          <!-- Скрытый главный заголовок -->
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="site-buttons">
+            <li class="button-items"><button type="button" class="button">Все</button></li>
+            <li class="button-items"><button type="button" class="button">Веб-сайты</button></li>
+            <li class="button-items"><button type="button" class="button">Приложения</button></li>
+            <li class="button-items"><button type="button" class="button">Дизайн</button></li>
+            <li class="button-items"><button type="button" class="button">Маркетинг</button></li>
+          </ul>
 
-        <ul class="list-content">
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/technocryak.jpg" alt="Веб-сайт Технокряк" />
-              </div>
-              <div>
-                <h2 class="content">Технокряк</h2>
-                <p>Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" />
-              </div>
-              <div>
-                <h2 class="content">Постер New Orlean vs Golden Star</h2>
-                <p>Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/restaurant.jpg" alt="Ресторан Seafood" />
-              </div>
-              <div>
-                <h2 class="content">Ресторан Seafood</h2>
-                <p>Приложение</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/prime.jpg" alt="Проект Prime" />
-              </div>
-              <div>
-                <h2 class="content">Проект Prime</h2>
-                <p>Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/boxes.jpg" alt="Проект Boxes" />
-              </div>
-              <div>
-                <h2 class="content">Проект Boxes</h2>
-                <p>Приложение</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" />
-              </div>
-              <div>
-                <h2 class="content">Inspiration has no Borders</h2>
-                <p>Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/LimitedEdition.jpg" alt="Издание Limited Edition" />
-              </div>
-              <div>
-                <h2 class="content">Издание Limited Edition</h2>
-                <p>Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/Lab.jpg" alt="Проект LAB" />
-              </div>
-              <div>
-                <h2 class="content">Проект LAB</h2>
-                <p>Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div>
-                <img src="./images/GrowingBusiness.jpg" alt="Growing Business" />
-              </div>
-              <div>
-                <h2 class="content">Growing Business</h2>
-                <p>Приложение</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+          <ul class="list-content">
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/technocryak.jpg" alt="Веб-сайт Технокряк" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Технокряк</h2>
+                  <p class="type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
+                  <p class="type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/restaurant.jpg" alt="Ресторан Seafood" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Ресторан Seafood</h2>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/prime.jpg" alt="Проект Prime" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Проект Prime</h2>
+                  <p class="type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/boxes.jpg" alt="Проект Boxes" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Проект Boxes</h2>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Inspiration has no Borders</h2>
+                  <p class="type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/LimitedEdition.jpg" alt="Издание Limited Edition" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Издание Limited Edition</h2>
+                  <p class="type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/Lab.jpg" alt="Проект LAB" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Проект LAB</h2>
+                  <p class="type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-content-item">
+              <a href="#">
+                <div class="img-portfolio-items">
+                  <img src="./images/GrowingBusiness.jpg" alt="Growing Business" />
+                </div>
+                <div class="content-portfolio">
+                  <h2 class="project-name">Growing Business</h2>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Подвал -->
